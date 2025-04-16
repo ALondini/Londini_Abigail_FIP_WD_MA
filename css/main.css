@@ -1,0 +1,128 @@
+html,
+body {
+    font-family: Charm, Merienda, Yatra One;
+}
+
+/* Hamburger icon rotation */
+#ham_checkbox:checked~#ham_menu svg {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide hamburger menu on desktop and show on mobile */
+@media (min-width: 768px) {
+    #ham_menu {
+        display: none;
+    }
+}
+
+/* Hide menu by default */
+#nav_menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show menu when checkbox is checked */
+#ham_checkbox:checked~#nav_menu {
+    display: flex;
+    opacity: 1;
+}
+
+/* Apply hover color change to all links in both header and footer */
+a:hover {
+    color: rgb(255, 231, 76);
+    transition: color 0.2s ease-in-out;
+}
+
+/* Keyframe Animation for fading in (no transform here) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Flavour images start hidden */
+.flavour-image {
+    opacity: 0;
+    transform: translateY(30px) scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Make image visible with translate only */
+.flavour-image.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Common hover effect */
+.flavour-image:hover {
+    transform: translateY(0) scale(1.15);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Chocolate image glow */
+.chocolate:hover {
+    filter: drop-shadow(0 0 10px rgba(101, 50, 13, 0.8));
+    /* Dark brown glow */
+}
+
+/* Strawberry image glow */
+.strawberry:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8));
+    /* Red glow */
+}
+
+/* Vanilla image glow */
+.vanilla:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.8));
+    /* Yellow glow */
+}
+
+/* Cinnamon image glow */
+.cinnamon:hover {
+    filter: drop-shadow(0 0 10px rgba(139, 69, 19, 0.8));
+    /* Brown glow */
+}
+
+/* Mint image glow */
+.mint:hover {
+    filter: drop-shadow(0 0 10px rgb(92, 255, 92));
+    /* Mint green glow */
+}
+
+/* Pumpkin image glow */
+.pumpkin:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.8));
+    /* Orange glow */
+}
+
+/* Fade out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.flavour-image.fade-out {
+    animation: fadeOut 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Media Queries to control visibility of the hamburger menu */
+
+/* Show the hamburger menu only on mobile screens */
+@media (max-width: 767px) {
+    #ham_menu {
+        display: block;
+    }
+}
