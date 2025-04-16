@@ -3,6 +3,20 @@ body {
     font-family: Charm, Merienda, Yatra One;
 }
 
+#main_content_box,
+body {
+    background-color: #FFFF5D;
+}
+
+.light-yellow-bg {
+    background-color: #FFFF9F;
+}
+
+#header_box {
+    background-color: #EDD900;
+    margin-bottom: 0px;
+}
+
 /* Hamburger icon rotation */
 #ham_checkbox:checked~#ham_menu svg {
     transform: rotate(90deg);
