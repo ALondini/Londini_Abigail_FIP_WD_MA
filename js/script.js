@@ -46,3 +46,20 @@ const fadeOutObserver = new IntersectionObserver((entries, observer) => {
 images.forEach(image => {
     fadeOutObserver.observe(image);
 });
+
+
+// Contact Form Submit Message
+
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent actual submission
+
+        // Show a simple thank-you message
+        alert('Thank you for your message! We’ll be in touch soon.');
+
+        // Reset the form fields
+        contactForm.reset();
+    });
+}
