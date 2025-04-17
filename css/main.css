@@ -1,5 +1,9 @@
 html,
 body {
+    font-family: Eb Garamond, Merienda, Yatra One;
+}
+
+.fancy-font {
     font-family: Charm, Merienda, Yatra One;
 }
 
@@ -12,10 +16,16 @@ body {
     background-color: #FFFF9F;
 }
 
-#header_box {
+#header_box,
+#footer_box,
+#nav_menu {
     background-color: #EDD900;
     margin-bottom: 0px;
 }
+
+/* .hidden {
+    display: none;
+} */
 
 /* Hamburger icon rotation */
 #ham_checkbox:checked~#ham_menu svg {
@@ -45,7 +55,7 @@ body {
 
 /* Apply hover color change to all links in both header and footer */
 a:hover {
-    color: rgb(255, 231, 76);
+    color: #FE007C;
     transition: color 0.2s ease-in-out;
 }
 
@@ -94,8 +104,8 @@ a:hover {
 
 /* Vanilla image glow */
 .vanilla:hover {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.8));
-    /* Yellow glow */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    /* White glow */
 }
 
 /* Cinnamon image glow */
