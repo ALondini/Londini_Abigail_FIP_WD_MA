@@ -23,6 +23,24 @@ body {
     margin-bottom: 0px;
 }
 
+.form_text {
+    text-align: left;
+}
+
+.form_box {
+    background-color: #FFFF9F;
+    border-color: #DEDE00;
+}
+
+.submit_button {
+    background-color: #DEDE00;
+    color: #FFFF9F;
+}
+
+.submit_button:hover {
+    background: #EDD900;
+}
+
 /* .hidden {
     display: none;
 } */
