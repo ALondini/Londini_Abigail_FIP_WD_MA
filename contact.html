@@ -1,1 +1,212 @@
 <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merienda:wght@300..900&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Swerve</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <h1 class="hidden">Homepage</h1>
+
+    <!-- Header -->
+    <header id="header_box" class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 p-4 bg-gray-100">
+        <h2 class="hidden">Header</h2>
+
+        <input type="checkbox" id="ham_checkbox" class="hidden">
+
+        <label for="ham_checkbox" id="ham_menu" class="flex flex-col justify-center items-center p-4 md:hidden">
+            <svg class="w-12 h-12 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </label>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="nav_menu"
+            class="hidden flex-col md:hidden bg-gray-100 rounded start-0 col-span-4 justify-center items-center text-2xl">
+            <h3 class="hidden">Mobile Menu</h3>
+
+            <a href="index.html" class="px-4 py-4 pt-8">Home</a>
+            <a href="#" class="px-4 py-4">About</a>
+            <a href="gallery.html" class="px-4 py-4">Gallery</a>
+            <a href="contact.html" class="px-4 py-4">Contact</a>
+            <a href="#" class="px-4 py-4 pb-8">Cart</a>
+        </div>
+
+        <!-- Desktop/Tablet Header -->
+        <div id="logo"
+            class="flex flex-col justify-center items-center pt-4 pb-4 max-h-[80px] col-start-2 md:block md:col-start-2 md:col-span-2 md:text-center md:text-lg lg:col-start-2 lg:col-span-2 lg:text-center lg:text-xl">
+            <h3 class="hidden">Logo</h3>
+            <img src="images/Swerve_Text.svg" alt="Logo" class="w-30 h-auto md:w-24 lg:w-24">
+        </div>
+        <a href="index.html" id="home"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-5 md:col-span-1 md:text-center md:text-lg lg:col-start-5 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">Home</h3>
+            Home
+        </a>
+        <a href="#" id="about"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-6 md:col-span-1 md:text-center md:text-lg lg:col-start-6 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">About</h3>
+            About
+        </a>
+        <a href="gallery.html" id="gallery"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-7 md:col-span-1 md:text-center md:text-lg lg:col-start-7 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">Gallery</h3>
+            Gallery
+        </a>
+        <a href="contact.html" id="contact"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-8 md:col-span-1 md:text-center md:text-lg lg:col-start-8 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">Contact</h3>
+            Contact
+        </a>
+        <a href="#" id="cart"
+            class="flex flex-col justify-center items-center pt-6 pb-6 col-start-4 md:block md:col-start-11 md:col-span-1 md:text-center md:text-lg lg:col-start-11 lg:col-span-1 lg:text-center lg:text-xl">
+            <img src="images/Cart.svg" alt="Cart Icon" class="w-8 h-8">
+        </a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <div class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 col-span-full light-yellow-bg m-0 h-auto">
+
+        <!-- Title Section -->
+        <div
+            class="col-span-full h-[200px] md:h-[250px] lg:h-auto md:col-span-full md:col-span-2 lg:col-start-6 lg:col-span-2 flex mb-5 lg:my-10 items-center justify-center">
+
+            <h3
+                class="text-5xl fancy-font col-start-1 col-span-full col md:col-start-6 md:col-end-6 items-center justify-center text-center mt-10">
+                Map
+            </h3>
+        </div>
+
+        <!-- Image Section -->
+        <div
+            class="col-span-full lg:col-start-2 lg:col-span-5 my-5 md:my-10 flex items-center justify-center light-yellow-bg">
+            <h3 class="hidden">Image</h3>
+            <img src="images/Map_1.jpg" alt="Map Image" class="max-h-[600px] h-auto object-contain">
+        </div>
+
+
+        <!-- Text Box Section -->
+        <div
+            class="col-span-full h-[150px] md:h-[200px] lg:h-auto md:col-span-full md:col-span-4 lg:col-start-8 lg:col-span-4 flex flex-col mb-5 lg:my-10 items-center justify-center">
+            <h3 class="hidden">Text Box</h3>
+
+            <p id="hero_text_small"
+                class="col-span-4 text-2xl mb-10 col-span-full h-[150px] md:h-[200px] lg:h-auto md:col-span-full md:col-span-4 lg:col-start-8 lg:col-span-4 flex flex-col mb-5 lg:my-10 justify-center col-start-1 col md:col-start-8 md:col-end-12 pb-10 md:pb-0 lg:pb-0">
+                <b>Halifax, Nova Scotia</b> (Spring Garden Road Area)<br>
+                <b>Address:</b> 1445 South Park Street, Unit 204
+                <br>
+                <b>Postal Code:</b> B3J 0B6
+                <b>Canada</b>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <main id="main_content_box"
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 md:gap-4 md:p-4 flex-grow bg-white p-0 m-0 overflow-auto">
+        <h2 class="hidden">Main Content</h2>
+
+        <!-- Contact Form Section -->
+        <div
+            class="col-span-full lg:col-start-4 lg:col-span-6 flex flex-col items-center justify-center my-10 px-4 text-center">
+            <h3 class="text-5xl fancy-font mb-6">Contact</h3>
+            <p id="text_small" class="text-2xl">
+                I’d love to hear from you! If you have any questions, suggestions, or just
+                <br class="sm:hidden md:block">
+                want to chat, feel free to reach out. I'll get back to you as soon as I can!
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contact_form_box"
+            class="col-span-full lg:col-start-4 lg:col-span-6 flex flex-col  my-10 px-4 text-center">
+            <h3 class="hidden">Contact Form</h3>
+
+            <form id="contactForm" method="POST" action="#" class="w-full max-w-xl mx-auto px-4 py-8 text-black">
+                <div class="mb-4">
+                    <label for="name" class="block text-xl mb-1 form_text">First and Last Name</label>
+                    <input type="text" id="name" name="name" placeholder="First and Last Name" required
+                        class="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 form_box">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-xl mb-1 form_text">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required
+                        class="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 form_box">
+                </div>
+
+                <div class="mb-4">
+                    <label for="phone" class="block text-xl mb-1 form_text">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number"
+                        class="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 form_box">
+                </div>
+
+                <div class="mb-6">
+                    <label for="message" class="block text-xl mb-1 form_text">Question/Comment</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Question/Comment" required
+                        class="w-full p-2 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 form_box"></textarea>
+                </div>
+
+                <div id="submit_button" class="text-center">
+                    <button type="submit"
+                        class="bg-yellow-300 text-black px-6 py-2 rounded hover:bg-yellow-400 transition duration-300 shadow-md submit_button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="footer_box"
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 p-4 mt-14 md:mt-0 bg-gray-100">
+        <h2 class="hidden">Footer</h2>
+
+        <div id="logo_2"
+            class="flex flex-col justify-center items-center pt-6 pb-6 col-start-2 col-span-2 text-xl md:col-start-2 md:col-span-2 md:text-center lg:col-start-2 lg:col-span-2 lg:text-center">
+            <h3 class="hidden">Logo</h3>
+            <img src="images/Swerve_Text.svg" alt="Logo" class="w-24 h-auto">
+        </div>
+        <a href="#" id="home_2"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-6 md:pb-6 col-span-full text-xl md:col-start-5 md:col-span-1 md:text-center lg:col-start-5 lg:col-span-1 lg:text-center">
+            <h3 class="hidden">Home</h3>
+            Home
+        </a>
+        <a href="#" id="about_2"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-6 md:pb-6 col-span-full text-xl md:col-start-6 md:col-span-1 md:text-center lg:col-start-6 lg:col-span-1 lg:text-center">
+            <h3 class="hidden">About</h3>
+            About
+        </a>
+        <a href="#" id="gallery_2"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-6 md:pb-6 col-span-full text-xl md:col-start-7 md:col-span-1 md:text-center lg:col-start-7 lg:col-span-1 lg:text-center">
+            <h3 class="hidden">Gallery</h3>
+            Gallery
+        </a>
+        <div id="contact_info"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-4 md:pb-4 col-span-full text-xl md:col-start-9 md:col-span-3 md:text-center lg:col-start-9 lg:col-span-3 lg:text-center">
+            <h3 class="hidden">Contact Info</h3>
+
+            <p>Contact Info</p>
+            <p class="text-sm">Phone: 123-456-7890</p>
+            <p class="text-sm">Email: name@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
