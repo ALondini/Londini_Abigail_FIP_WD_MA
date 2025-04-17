@@ -1,1 +1,266 @@
 <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merienda:wght@300..900&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Swerve</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <h1 class="hidden">Homepage</h1>
+
+    <!-- Header -->
+    <header id="header_box" class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 p-4 bg-gray-100">
+        <h2 class="hidden">Header</h2>
+
+        <input type="checkbox" id="ham_checkbox" class="hidden">
+
+        <label for="ham_checkbox" id="ham_menu" class="flex flex-col justify-center items-center p-4 md:hidden">
+            <svg class="w-12 h-12 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </label>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="nav_menu"
+            class="hidden flex-col md:hidden bg-gray-100 rounded start-0 col-span-4 justify-center items-center text-2xl">
+            <h3 class="hidden">Mobile Menu</h3>
+
+            <a href="index.html" class="px-4 py-4 pt-8">Home</a>
+            <a href="#" class="px-4 py-4">About</a>
+            <a href="gallery.html" class="px-4 py-4">Gallery</a>
+            <a href="contact.html" class="px-4 py-4">Contact</a>
+            <a href="#" class="px-4 py-4 pb-8">Cart</a>
+        </div>
+
+        <!-- Desktop/Tablet Header -->
+        <div id="logo"
+            class="flex flex-col justify-center items-center pt-4 pb-4 max-h-[80px] col-start-2 md:block md:col-start-2 md:col-span-2 md:text-center md:text-lg lg:col-start-2 lg:col-span-2 lg:text-center lg:text-xl">
+            <h3 class="hidden">Logo</h3>
+            <img src="images/Swerve Text.svg" alt="Logo" class="w-30 h-auto md:w-24 lg:w-24">
+        </div>
+        <a href="index.html" id="home"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-5 md:col-span-1 md:text-center md:text-lg lg:col-start-5 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">Home</h3>
+            Home
+        </a>
+        <a href="#" id="about"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-6 md:col-span-1 md:text-center md:text-lg lg:col-start-6 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">About</h3>
+            About
+        </a>
+        <a href="gallery.html" id="gallery"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-7 md:col-span-1 md:text-center md:text-lg lg:col-start-7 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">Gallery</h3>
+            Gallery
+        </a>
+        <a href="contact.html" id="contact"
+            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-8 md:col-span-1 md:text-center md:text-lg lg:col-start-8 lg:col-span-1 lg:text-center lg:text-xl">
+            <h3 class="hidden">Contact</h3>
+            Contact
+        </a>
+        <a href="#" id="cart"
+            class="flex flex-col justify-center items-center pt-6 pb-6 col-start-4 md:block md:col-start-11 md:col-span-1 md:text-center md:text-lg lg:col-start-11 lg:col-span-1 lg:text-center lg:text-xl">
+            <img src="images/Cart.svg" alt="Cart Icon" class="w-8 h-8">
+        </a>
+    </header>
+
+
+    <!-- Main Content Section -->
+    <main id="main_content_box"
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 pb-4 gap-4 md:gap-4 md:p-4 flex-grow bg-white p-0 m-0 overflow-auto">
+        <h2 class="hidden">Gallery Stills</h2>
+
+        <!-- Gallery Stills Section -->
+        <h3
+            class="text-5xl fancy-font col-start-1 col-span-full col md:col-start-6 md:col-span-2 items-center justify-center text-center pt-20">
+            Gallery
+        </h3>
+
+        <h3 class="text-3xl text-center col-span-full mt-10 mb-7">Stills</h3>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
+            <h3 class="hidden">Gallery Image 1</h3>
+
+            <img src="images/Poster 1.2.jpg" alt="Gallery Image 1"
+                class=" h-auto object-cover col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-5 md:col-span-4 lg:col-start-5 lg:col-span-4">
+            <h3 class="hidden">Gallery Image 2</h3>
+            <img src="images/Poster 2.1 copy.jpg" alt="Gallery Image 2"
+                class=" h-auto object-cover col-span-2 md:col-start-5 md:col-span-4 lg:col-start-5 lg:col-span-4 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
+            <h3 class="hidden">Gallery Image 3</h3>
+            <img src="images/Drinks.jpg" alt="Gallery Image 3"
+                class=" h-auto object-cover col-span-2 md:col-start-9 md:col-span-4 lg:col-start-9  lg:col-span-4 pt-0 mt-0">
+        </div>
+
+
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-1 md:col-span-2 lg:col-start-1 lg:col-span-2">
+            <h3 class="hidden">Gallery Image 4</h3>
+            <img src="images/Zendaya Collateral.jpg" alt="Gallery Image 4"
+                class="h-300px object-cover col-span-2 md:col-start-1 md:col-span-2 lg:col-start-1 lg:col-span-2 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-full  md:col-start-3 md:col-span-8 lg:col-start-3 lg:col-span-8">
+            <h3 class="hidden">Gallery Image 5</h3>
+            <img src="images/Truck Collateral.jpg" alt="Gallery Image 5"
+                class="h-auto object-cover col-span-2 md:col-start-3 md:col-span-8 lg:col-start-3 lg:col-span-8 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2">
+            <h3 class="hidden">Gallery Image 6</h3>
+            <img src="images/Doctor Who Collateral.jpg" alt="Gallery Image 6"
+                class="h-300px object-cover col-span-2 md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
+            <h3 class="hidden">Gallery Image 7</h3>
+            <img src="images/Poster 4.jpg" alt="Gallery Image 7"
+                class="h-300px object-cover col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-5 md:col-span-2 lg:col-start-5 lg:col-span-2">
+            <h3 class="hidden">Gallery Image 8</h3>
+            <img src="images/Poster 5.3.jpg" alt="Gallery Image 8"
+                class="h-auto object-cover col-span-2 md:col-start-5 md:col-span-2 lg:col-start-5 lg:col-span-2 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-7 md:col-span-2 lg:col-start-7 lg:col-span-2">
+            <h3 class="hidden">Gallery Image 9</h3>
+            <img src="images/Poster 3.jpg" alt="Gallery Image 9"
+                class="h-auto object-cover col-span-2 md:col-start-7 md:col-span-2 lg:col-start-7 lg:col-span-2 pt-0 mt-0">
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-2  md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
+            <h3 class="hidden">Gallery Image 10</h3>
+            <img src="images/Asset 1-50.jpg" alt="Gallery Image 10"
+                class="h-300px object-cover col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4 pt-0 mt-0">
+        </div>
+    </main>
+
+
+    <!-- Video Section -->
+    <div
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 col-span-full light-yellow-bg mt-10 hidden md:block mb-0 overflow-auto">
+
+        <!-- Text Box Section -->
+        <div
+            class="col-span-full h-[150px] md:h-[200px] md:col-start-8 md:col-span-2 lg:h-[200px] lg:col-start-8 lg:col-span-4 flex items-center justify-center">
+
+            <h3
+                class="text-5xl col-start-1 col-span-full md:col-start-8 md:col-end-12 items-center justify-center text-center">
+                Videos
+            </h3>
+        </div>
+
+        <!-- Video Section -->
+        <div class="col-span-full flex items-center justify-center light-yellow-bg pb-20">
+            <h3 class="hidden">Video</h3>
+            <img src="images/Bottles - UFO2.jpg " alt="Video Still"
+                class="flex items-center justify-center max-h-[400px] h-auto object-cover col-span-2 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-6 pr-5 pl-5 mt-0">
+            <img src="images/Bottles.jpg " alt="Video Still"
+                class="flex items-center justify-center max-h-[400px] h-auto object-cover col-span-2 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-6 pr-5 pl-5 mt-0">
+        </div>
+    </div>
+
+
+    <!-- Merchandise Section -->
+    <div id="Merchandise"
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 pb-4 gap-4 md:gap-4 md:p-4 flex-grow p-0 m-0 overflow-auto">
+        <h2 class="hidden">Gallery Stills</h2>
+
+        <!-- Merchandise Section -->
+
+        <h3 class="text-3xl text-center col-span-full mt-10 mb-7">Merchandise</h3>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-full md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
+            <h3 class="hidden">Shopping Bags</h3>
+            <img src="images/Shopping Bags Collateral 2.jpg" alt="Shopping Bags"
+                class="h-auto object-cover col-span-full md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4 pt-0 mt-0">
+            <h3 class="text-2xl text-center col-span-2 mt-5 mb-10"><strong>Tote Bags</strong> $14.99/each</h3>
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-full md:col-start-5 md:col-span-4 lg:col-start-5 lg:col-span-4">
+            <h3 class="hidden">Train</h3>
+            <img src="images/Train Collateral.jpg" alt="Train"
+                class="h-auto object-cover col-span-full md:col-start-5 md:col-span-4 lg:col-start-5 lg:col-span-4 pt-0 mt-0">
+            <h3 class="text-2xl text-center col-span-full mt-5 mb-10"><strong>Wooden Train</strong> $49.99</h3>
+        </div>
+
+        <div
+            class="flex flex-col items-center justify-center col-span-full md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
+            <h3 class="hidden">Hats</h3>
+            <img src="images/Hats Collateral.jpg" alt="Hats"
+                class="h-auto object-cover col-span-full md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4 pt-0 mt-0">
+            <h3 class="text-2xl text-center col-span-full mt-5 mb-10">
+                <strong>Hats</strong> $19.99/each
+            </h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer_box"
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 p-4 mt-14 md:mt-0 bg-gray-100">
+        <h2 class="hidden">Footer</h2>
+
+        <div id="logo_2"
+            class="flex flex-col justify-center items-center pt-6 pb-6 col-start-2 col-span-2 text-xl md:col-start-2 md:col-span-2 md:text-center lg:col-start-2 lg:col-span-2 lg:text-center">
+            <h3 class="hidden">Logo</h3>
+            <img src="images/Swerve Text.svg" alt="Logo" class="w-24 h-auto">
+        </div>
+        <a href="#" id="home_2"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-6 md:pb-6 col-span-full text-xl md:col-start-5 md:col-span-1 md:text-center lg:col-start-5 lg:col-span-1 lg:text-center">
+            <h3 class="hidden">Home</h3>
+            Home
+        </a>
+        <a href="#" id="about_2"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-6 md:pb-6 col-span-full text-xl md:col-start-6 md:col-span-1 md:text-center lg:col-start-6 lg:col-span-1 lg:text-center">
+            <h3 class="hidden">About</h3>
+            About
+        </a>
+        <a href="#" id="gallery_2"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-6 md:pb-6 col-span-full text-xl md:col-start-7 md:col-span-1 md:text-center lg:col-start-7 lg:col-span-1 lg:text-center">
+            <h3 class="hidden">Gallery</h3>
+            Gallery
+        </a>
+        <div id="contact_info"
+            class="flex flex-col justify-center items-center pt-3 pb-3 md:pt-4 md:pb-4 col-span-full text-xl md:col-start-9 md:col-span-3 md:text-center lg:col-start-9 lg:col-span-3 lg:text-center">
+            <h3 class="hidden">Contact Info</h3>
+
+            <p>Contact Info</p>
+            <p class="text-sm">Phone: 123-456-7890</p>
+            <p class="text-sm">Email: name@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
