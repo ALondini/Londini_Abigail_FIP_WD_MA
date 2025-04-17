@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merienda:wght@300..900&family=Yatra+One&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/main.css">
     <title>Swerve</title>
@@ -31,20 +36,20 @@
             class="hidden flex-col md:hidden bg-gray-100 rounded start-0 col-span-4 justify-center items-center text-2xl">
             <h3 class="hidden">Mobile Menu</h3>
 
-            <a href="#" class="px-4 py-4 pt-8">Home</a>
+            <a href="index.html" class="px-4 py-4 pt-8">Home</a>
             <a href="#" class="px-4 py-4">About</a>
-            <a href="#" class="px-4 py-4">Gallery</a>
-            <a href="#" class="px-4 py-4">Contact</a>
+            <a href="gallery.html" class="px-4 py-4">Gallery</a>
+            <a href="contact.html" class="px-4 py-4">Contact</a>
             <a href="#" class="px-4 py-4 pb-8">Cart</a>
         </div>
 
         <!-- Desktop/Tablet Header -->
         <div id="logo"
-            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-2 md:col-span-2 md:text-center md:text-lg lg:col-start-2 lg:col-span-2 lg:text-center lg:text-xl">
+            class="flex flex-col justify-center items-center pt-4 pb-4 max-h-[80px] col-start-2 md:block md:col-start-2 md:col-span-2 md:text-center md:text-lg lg:col-start-2 lg:col-span-2 lg:text-center lg:text-xl">
             <h3 class="hidden">Logo</h3>
-            <img src="images/Swerve Text.svg" alt="Logo" class="w-24 h-auto">
+            <img src="images/Swerve Text.svg" alt="Logo" class="w-30 h-auto md:w-24 lg:w-24">
         </div>
-        <a href="#" id="home"
+        <a href="index.html" id="home"
             class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-5 md:col-span-1 md:text-center md:text-lg lg:col-start-5 lg:col-span-1 lg:text-center lg:text-xl">
             <h3 class="hidden">Home</h3>
             Home
@@ -54,18 +59,18 @@
             <h3 class="hidden">About</h3>
             About
         </a>
-        <a href="#" id="gallery"
+        <a href="gallery.html" id="gallery"
             class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-7 md:col-span-1 md:text-center md:text-lg lg:col-start-7 lg:col-span-1 lg:text-center lg:text-xl">
             <h3 class="hidden">Gallery</h3>
             Gallery
         </a>
-        <a href="#" id="contact"
+        <a href="contact.html" id="contact"
             class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-8 md:col-span-1 md:text-center md:text-lg lg:col-start-8 lg:col-span-1 lg:text-center lg:text-xl">
             <h3 class="hidden">Contact</h3>
             Contact
         </a>
         <a href="#" id="cart"
-            class="flex flex-col justify-center items-center pt-6 pb-6 hidden md:block md:col-start-11 md:col-span-1 md:text-center md:text-lg lg:col-start-11 lg:col-span-1 lg:text-center lg:text-xl">
+            class="flex flex-col justify-center items-center pt-6 pb-6 col-start-4 md:block md:col-start-11 md:col-span-1 md:text-center md:text-lg lg:col-start-11 lg:col-span-1 lg:text-center lg:text-xl">
             <img src="images/Cart.svg" alt="Cart Icon" class="w-8 h-8">
         </a>
     </header>
@@ -75,7 +80,7 @@
     <div class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 col-span-full light-yellow-bg m-0">
         <!-- Image Section -->
         <div
-            class="col-span-full md:col-span-full lg:col-start-2 lg:col-span-5 my-5 md:my-10 flex items-center justify-center light-yellow-bg">
+            class="col-span-full lg:col-start-2 lg:col-span-5 my-5 md:my-10 flex items-center justify-center light-yellow-bg">
             <h3 class="hidden">Image</h3>
             <img src="images/Drinks3.png" alt="Placeholder Image" class="max-h-[600px] h-auto object-contain">
         </div>
@@ -83,8 +88,20 @@
 
         <!-- Text Box Section -->
         <div
-            class="col-span-full h-[150px] md:h-[200px] lg:h-auto md:col-span-full lg:col-start-8 lg:col-span-4 flex mb-5 lg:my-10 items-center justify-center ">
-            <h3 class="text-5xl">Text Here</h3>
+            class="col-span-full h-[150px] md:h-[200px] lg:h-auto md:col-span-full md:col-span-4 lg:col-start-8 lg:col-span-4 flex flex-col mb-5 lg:my-10 items-center justify-center">
+
+            <h3
+                class="text-5xl fancy-font col-start-1 col-span-full col md:col-start-8 md:col-end-12 items-center justify-center text-center">
+                Taste the Rainbow
+                (of Flavors!)
+            </h3>
+            <br>
+            <p id="hero_text_small"
+                class="col-span-4 text-2xl mb-10col-span-full h-[150px] md:h-[200px] lg:h-auto md:col-span-full md:col-span-4 lg:col-start-8 lg:col-span-4 flex flex-col mb-5 lg:my-10 items-center justify-center col-start-1 col md:col-start-8 md:col-end-12 items-center justify-center text-center pb-10 md:pb-0 lg:pb-0">
+                Colorful, creamy, and totally craveable.
+                <br>
+                Swerve isn’t just a drink—it’s an experience.
+            </p>
         </div>
     </div>
 
@@ -97,52 +114,84 @@
         <!-- Flavour Section -->
         <h3 class="text-3xl text-center col-span-full mt-14">Flavours</h3>
 
-        <div class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-3">
+        <div
+            class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
             <h3 class="hidden">Chocolate</h3>
             <img src="images/Chocolate2.png" alt="Chocolate Placeholder Image"
-                class="flavour-image chocolate max-h-[250px] h-auto object-cover col-span-2">
-            <p class="text-xl">Chocolate</p>
+                class="flavour-image chocolate max-h-[350px] h-auto object-cover col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
+            <p class="text-2xl pt-4">Chocolate</p>
         </div>
 
-        <div class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-6">
+        <div
+            class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-5 md:col-start-5  md:col-span-4 lg:col-start-5 lg:col-span-4">
             <h3 class="hidden">Strawberry</h3>
             <img src="images/Strawberry2.png" alt="Strawberry Placeholder Image"
-                class="flavour-image strawberry max-h-[250px] h-auto object-cover col-span-2">
-            <p class="text-xl">Strawberry</p>
+                class="flavour-image strawberry max-h-[350px] h-auto object-cover col-span-2 md:col-start-5  md:col-span-4 lg:col-start-5 lg:col-span-4">
+            <p class="text-2xl pt-4">Strawberry</p>
         </div>
 
-        <div class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-9">
+        <div
+            class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
             <h3 class="hidden">Vanilla</h3>
             <img src="images/Vanilla2.png" alt="Vanilla Placeholder Image"
-                class="flavour-image vanilla max-h-[250px] h-auto object-cover col-span-2">
-            <p class="text-xl">Vanilla</p>
+                class="flavour-image vanilla max-h-[350px] h-auto object-cover col-span-2 md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
+            <p class="text-2xl pt-4">Vanilla</p>
         </div>
 
-        <div class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-3">
+        <div
+            class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
             <h3 class="hidden">Cinnamon</h3>
             <img src="images/Cinnamon2.png" alt="Cinnamon Placeholder Image"
-                class="flavour-image cinnamon max-h-[250px] h-auto object-cover col-span-2">
-            <p class="text-xl">Cinnamon</p>
+                class="flavour-image cinnamon max-h-[350px] h-auto object-cover col-span-2 md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4">
+            <p class="text-2xl pt-4">Cinnamon</p>
         </div>
 
-        <div class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-6">
+        <div
+            class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-5  md:col-span-4 lg:col-start-5 lg:col-span-4">
             <h3 class="hidden">Mint</h3>
             <img src="images/Mint2.png" alt="Mint Placeholder Image"
-                class="flavour-image mint max-h-[250px] h-auto object-cover col-span-2">
-            <p class="text-xl">Mint</p>
+                class="flavour-image mint max-h-[350px] h-auto object-cover col-span-2 md:col-start-5  md:col-span-4 lg:col-start-5 lg:col-span-4">
+            <p class="text-2xl pt-4">Mint</p>
         </div>
 
-        <div class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-9">
+        <div
+            class="flex flex-col items-center justify-center p-4 col-span-2 md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
             <h3 class="hidden">Pumpkin Spice</h3>
             <img src="images/Pumpkin2.png" alt="Pumpkin Placeholder Image"
-                class="flavour-image pumpkin max-h-[250px] h-auto object-cover col-span-2">
-            <p class="text-xl">Pumpkin Spice</p>
+                class="flavour-image pumpkin max-h-[350px] h-auto object-cover col-span-2 md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4">
+            <p class="text-2xl pt-4">Pumpkin Spice</p>
         </div>
     </main>
 
 
+    <!-- Video Section -->
+    <div
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 col-span-full light-yellow-bg mt-10 hidden md:block mb-0">
+
+        <!-- Text Box Section -->
+        <div
+            class="col-span-full h-[150px] md:h-[200px] md:col-start-8 md:col-span-2 lg:h-[200px] lg:col-start-8 lg:col-span-4 flex items-center justify-center">
+
+            <h3
+                class="text-5xl col-start-1 col-span-full md:col-start-8 md:col-end-12 items-center justify-center text-center">
+                Video
+            </h3>
+        </div>
+
+        <!-- Video Section -->
+        <div class="col-span-full flex items-center justify-center light-yellow-bg pb-20">
+            <h3 class="hidden">Video</h3>
+            <video class="w-col-start-1 h-auto max-h-[600px] object-contain" controls>
+                <source src="images/Swerve Video Final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
     <!-- Footer -->
-    <footer id="footer_box" class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 p-4 mt-14 bg-gray-100">
+    <footer id="footer_box"
+        class="grid grid-cols-4 md:grid-cols-12 lg:grid-cols-12 gap-4 p-4 mt-14 md:mt-0 bg-gray-100">
         <h2 class="hidden">Footer</h2>
 
         <div id="logo_2"
